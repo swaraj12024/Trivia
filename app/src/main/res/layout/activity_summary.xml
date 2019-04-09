@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SummaryActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Summary"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Here are the answers selected"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/single_question"
+            android:layout_margin="10dp"
+            android:text="Who is the best cricketer in the world?"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/single_answer"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiple_question"
+            android:layout_margin="10dp"
+            android:text="What are the colors in the national flag?"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiple_answer"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:text="History"
+            android:textColor="#fff"
+            android:layout_marginRight="1dp"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/finish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:text="Finish"
+            android:textColor="#fff"
+            android:fontFamily="@font/montserrat_bold"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
